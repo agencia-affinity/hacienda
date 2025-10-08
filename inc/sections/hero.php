@@ -21,7 +21,7 @@ $dados_contato = [
                     <li>
                         <a target="_blank" rel="noreferrer no-follow" href="<?= $value['link'] ?>" class="contact-item">
                             <figure>
-                                <?php if (str_contains($value['icon'], 'ph ')) : ?>
+                                <?php if (strpos($value['icon'], 'ph ')) : ?>
                                     <i class="<?= $value['icon'] ?>" aria-hidden="true"></i>
                                 <?php else : ?>
                                     <img src="<?= $value['icon'] ?>" alt="<?= $value['alt'] ?>">
