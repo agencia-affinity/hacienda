@@ -43,14 +43,12 @@
 
                 <div class="area-legal">
                     <p class="legal">
-                        O empreendimento imobiliário encontra-se registrado sob o R.I. XXXXXX na matrícula nº 22.121,
-                        Livro 02, no registro de Imóveis da 1ª Circunscrição Imobiliária da Comarca de Aquidauana/MS,
-                        nos termos do Termo de Verificação/Aprovação de Loteamento vinculado ao Processo nº 3531/2025
-                        emitido em 14 de agosto de 2025 pela Prefeitura Municipal de Aquidauana/MS. As imagens e
-                        perspectivas do empreendimento são meramente ilustrativas e possuem sugestão de decoração e/ou
-                        de paisagismo, podendo ser alteradas sem prévio aviso. As áreas comuns e unidades serão
-                        entregues conforme memorial descritivo. Loteadora responsável: HACIENDA EMPREENDIMENTOS SPE
-                        LTDA, inscrita no CNPJ. sob número 56.875.563/0001-88.
+                        Material preliminar sujeito a alterações. Conforme a Lei 4591/64 e o Código de Defesa do
+                        Consumidor, o empreendimento será comercializado apenas após o Registro do Memorial de
+                        Incorporação. As imagens e perspectivas do empreendimento são meramente ilustrativas e possuem
+                        sugestão de decoração e/ou de paisagismo, podendo ser alteradas sem prévio aviso. As áreas
+                        comuns e unidades serão entregues conforme memorial descritivo. Incorporador responsável:
+                        HACIENDA EMPREENDIMENTOS SPE LTDA, inscrita no CNPJ, inscrita no CNPJ 56.875.563/0001-88.
                     </p>
                 </div>
             </div>
