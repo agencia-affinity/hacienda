@@ -12,7 +12,7 @@ $dados_localizacao = [
 
 <section class="s-localizacao" id="localizacao">
     <div class="container medium">
-        <div class="top-infos">
+        <div class="top-infos" data-aos="fade-up">
             <h2>Localização <span>privilegiada</span></h2>
             <p>Infraestrutura completa para proporcionar uma experiência sofisticada e exclusiva ao alcance de tudo o
                 que você precisa.
@@ -20,14 +20,14 @@ $dados_localizacao = [
         </div>
 
         <div class="bottom-infos">
-            <div class="info">
+            <div class="info" data-aos="fade-right">
                 <figure>
                     <img src="assets/images/icons/icon-pin.svg" alt="Ícone de um ponteiro de GPS">
                 </figure>
                 <span><strong>MS 450</strong>, Aquidauana - MS</span>
             </div>
 
-            <div class="infos-address">
+            <div class="infos-address" data-aos="fade-left">
                 <ul class="custom-list">
                     <?php foreach ($dados_localizacao as $index => $item) : ?>
                         <li>

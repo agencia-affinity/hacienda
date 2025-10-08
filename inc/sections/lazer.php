@@ -13,7 +13,7 @@ $galeria = [
 
 <section class="s-lazer" id="lazer" data-offset="180">
     <div class="container">
-        <div class="top-area">
+        <div class="top-area" data-aos="fade-up">
             <p>Um lugar que une lazer, natureza e sofisticação, o cenário ideal para quem sempre sonhou em ter uma casa
                 no campo sem abrir mão do conforto e da estrutura de um grande empreendimento.
             </p>
@@ -21,7 +21,7 @@ $galeria = [
             <h2>Lazer <span>completo</span></h2>
         </div>
 
-        <div class="area-slider">
+        <div class="area-slider" data-aos="fade-up">
             <div class="slide-lazer">
                 <div class="swiper-wrapper">
                     <?php foreach ($galeria as $foto): ?>

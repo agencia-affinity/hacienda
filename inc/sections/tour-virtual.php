@@ -1,8 +1,9 @@
 <section class="s-tour-virtual">
     <div class="container medium">
-        <div class="infos" id="js-tour" data-aos="fade-up">
+        <div class="infos" id="js-tour">
             <h2>Tour Virtual</h2>
-            <p>Conheça cada ambiente deste projeto encantador em alguns cliques. Viva essa experiência imersiva e
+            <p>Conheça cada ambiente deste projeto encantador em alguns cliques. Viva essa
+                experiência imersiva e
                 detalhada.</p>
         </div>
     </div>

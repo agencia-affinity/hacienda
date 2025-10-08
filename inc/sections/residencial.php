@@ -1,10 +1,10 @@
 <section class="s-residencial" id="residencial" data-offset="10">
 
-    <div class="image">
+    <div class="image" data-aos="fade-right">
         <img src="assets/images/banners/img-residencial.webp" alt="Imagem mostrando o complexo Residencial">
     </div>
 
-    <div class="container">
+    <div class="container" data-aos="fade-left">
         <div class="right">
             <h2>CONHEÇA <span>onde será a sua segunda moradia</span></h2>
 

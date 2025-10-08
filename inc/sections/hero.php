@@ -8,7 +8,7 @@ $dados_contato = [
 
 <section class="s-hero" id="home">
     <div class="container">
-        <div class="left-area">
+        <div class="left-area" data-aos="fade-right">
             <div class="info-contact">
                 <div class="icon">
                     <img src="assets/images/icons/icon-dialog.svg" alt="Ícone de um chat">
@@ -34,7 +34,7 @@ $dados_contato = [
             </ul>
         </div>
 
-        <div class="right-area">
+        <div class="right-area" data-aos="fade-left">
             <h3>Receba agora:</h3>
             <span>Registre-se para receber a tabela de venda disponível e mais detalhes!</span>
 
