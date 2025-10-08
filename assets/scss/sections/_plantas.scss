@@ -1,0 +1,67 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.s-implantacao {
+  background: $accent-02;
+  border-top: rem(16) solid $green-04;
+
+  .container {
+    padding-top: rem(92);
+    padding-bottom: rem(74);
+    @include flex-start;
+    gap: rem(80);
+
+    h2 {
+      font-size: rem(80);
+      text-transform: uppercase;
+      color: $accent-01;
+      letter-spacing: rem(8);
+    }
+
+    p {
+      width: rem(521);
+      font-size: rem(20);
+      color: $green-08;
+    }
+  }
+
+  @include responsive('tablet') {
+    .container {
+      padding-top: rem(60);
+      padding-bottom: rem(48);
+
+      h2 {
+        font-size: rem(40);
+      }
+
+      p {
+        font-size: rem(18);
+      }
+    }
+  }
+
+  @include responsive('tablet-small') {
+    .container {
+      padding-block: rem(64);
+      flex-direction: column;
+      gap: rem(32);
+
+      p {
+        width: auto;
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    .container {
+      h2 {
+        font-size: rem(40);
+      }
+
+      p {
+        font-size: rem(16);
+      }
+    }
+  }
+}

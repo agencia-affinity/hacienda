@@ -1,0 +1,53 @@
+@use 'mixins' as *;
+@use 'functions' as *;
+@use "sass:map";
+
+:root {
+  --green-01: #cdd5c0;
+  --green-02: #c1cab1;
+  --green-03: #839563;
+  --green-04: #768355;
+  --green-05: #677542;
+  --green-06: #3d4926;
+  --green-07: #293317;
+  --green-08: #1e280e;
+
+  --white: #ffffff;
+  --black: #000000;
+
+  --line-shorten: 100%;
+  --line-normal: 120%;
+  --line-longest: 150%;
+}
+
+$green: (
+        01: #cdd5c0,
+        02: #c1cab1,
+        03: #839563,
+        04: #768355,
+        05: #677542,
+        06: #3d4926,
+        07: #293317,
+        08: #1e280e
+);
+
+$green-01: map-get($green, 01);
+$green-02: map-get($green, 02);
+$green-03: map-get($green, 03);
+$green-04: map-get($green, 04);
+$green-05: map-get($green, 05);
+$green-06: map-get($green, 06);
+$green-07: map-get($green, 07);
+$green-08: map-get($green, 08);
+
+$accent-01: #a85e36;
+$accent-02: #d4af9a;
+$accent-03: #743611;
+$accent-04: #b16e4a;
+$accent-05: #ccc1bc;
+$accent-06: #929497;
+$accent-07: #404041;
+$white: #fff;
+$black: #000;
+$font-primary: "Montserrat", sans-serif;
+$font-secondary: "Lora", serif;

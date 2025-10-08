@@ -1,0 +1,28 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.btn {
+  font-size: rem(16);
+  background: $accent-01;
+  color: $white;
+  display: inline-block;
+  padding: rem(10) rem(18);
+  text-transform: uppercase;
+  @include transition;
+
+  &.icon {
+    @include flex-center;
+    display: inline-flex;
+    gap: rem(8);
+    text-align: center;
+
+    img {
+      width: rem(16);
+    }
+  }
+
+  &:hover {
+    background: $accent-02;
+  }
+}

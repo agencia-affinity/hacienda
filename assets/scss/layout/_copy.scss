@@ -1,0 +1,38 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+
+.copy {
+  background-color: $green-06;
+  padding-block: 1rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: rem(8);
+
+    .logo-copy {
+      width: 100%;
+      max-width: rem(112);
+    }
+
+    .texto-developer {
+      color: $green-03;
+      text-align: end;
+      font-size: rem(14);
+      font-weight: 500;
+      line-height: 140%;
+    }
+  }
+
+  @include responsive('mobile') {
+    .container {
+      justify-content: center;
+
+      .texto-developer {
+        text-align: center;
+      }
+    }
+  }
+}

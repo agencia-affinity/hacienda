@@ -1,0 +1,192 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+
+footer {
+  border-top: rem(10) solid $green-03;
+  background: $green-08;
+  padding: rem(57) 0 rem(52);
+
+  .container {
+    @include flex-start-center;
+    gap: rem(148);
+
+    .left {
+      width: 100%;
+      max-width: rem(703);
+
+      .logos {
+        @include flex-center;
+        gap: rem(62);
+        margin-top: rem(21);
+        margin-bottom: rem(80);
+
+        figure {
+          &:first-child {
+            width: 100%;
+            max-width: rem(396);
+          }
+        }
+      }
+
+      .area-contacts {
+        margin-bottom: rem(60);
+        @include flex-end;
+        gap: rem(101);
+
+        .social-networks {
+          @include flex-center;
+          gap: rem(10);
+        }
+
+        .contacts {
+          flex: 1;
+
+          .whatsapp {
+            @include flex-center;
+            gap: rem(8);
+            margin-bottom: rem(14);
+
+            img {
+              width: rem(30);
+            }
+
+
+            span {
+              font-size: rem(30);
+              font-weight: 600;
+              color: $white;
+            }
+          }
+
+          .social-contact {
+            @include flex-center;
+            gap: rem(4);
+
+            .icons-social {
+              @include flex-center;
+              gap: rem(2);
+            }
+
+            span {
+              font-size: rem(25);
+              color: $white;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .area-legal {
+        .legal {
+          font-size: rem(12);
+          color: $white;
+        }
+      }
+    }
+
+    .right-area {
+      width: 100%;
+      max-width: rem(359);
+
+      h5 {
+        font-size: rem(17);
+        letter-spacing: rem(1, 7);
+        margin-bottom: rem(14);
+        color: $accent-01;
+        text-transform: uppercase;
+        font-family: $font-primary;
+      }
+
+      p {
+        font-size: rem(18);
+        font-weight: 600;
+        color: $white;
+        margin-bottom: rem(22);
+      }
+    }
+  }
+
+  @include responsive('tablet') {
+    padding-block: rem(64);
+    .container {
+      flex-direction: column;
+      gap: rem(24);
+
+      .left {
+        max-width: 100%;
+
+        .main-top {
+          .logos {
+            margin-top: 0;
+            margin-bottom: rem(32);
+            flex-wrap: wrap;
+          }
+        }
+      }
+
+      .right-area {
+        max-width: 100%;
+
+        .form-footer {
+          .form-button {
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    padding-block: rem(56);
+    .container {
+      .left {
+        .main-top {
+          .logos {
+            align-items: center;
+            justify-content: center;
+            gap: rem(20);
+            margin-bottom: rem(20);
+
+            figure {
+              flex: 1;
+              max-width: 50%;
+            }
+          }
+
+          .area-contacts {
+            margin-bottom: rem(20);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: rem(12);
+
+            .contacts {
+              .whatsapp {
+                margin-bottom: rem(8);
+
+                span {
+                  font-size: rem(24);
+                }
+              }
+            }
+          }
+
+          .area-legal {
+            .legal {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .right-area {
+        h5, p {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

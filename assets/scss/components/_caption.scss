@@ -1,0 +1,19 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.caption {
+  @include flex-center;
+  gap: rem(8);
+
+  .icon {
+    width: rem(20);
+    height: rem(20);
+  }
+
+  figcaption {
+    font-size: rem(14);
+    font-weight: 400;
+    color: $white;
+  }
+}

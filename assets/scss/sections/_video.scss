@@ -1,0 +1,122 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.s-video {
+  position: relative;
+  padding: rem(110) 0 rem(188);
+  background: $accent-03;
+  border-top: rem(16) solid $accent-04;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem(1035);
+    height: rem(866);
+    z-index: 0;
+    background: url("../images/illustras/pattern-01.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+    z-index: 20;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: rem(80);
+      margin-bottom: rem(64);
+      color: $accent-02;
+    }
+
+    .video-container {
+      position: relative;
+      margin-bottom: rem(30);
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .btn-video {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20;
+        background-color: $green-06;
+        @include flex-total-center;
+
+        svg {
+          fill: $green-02;
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    p {
+      margin-inline: auto;
+      width: rem(1072);
+      font-size: rem(20);
+      color: $green-08;
+    }
+  }
+
+  .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: rem(494);
+    background: $white;
+    z-index: 0;
+  }
+
+  @include responsive('tablet') {
+    padding-block: rem(90);
+
+    &::after {
+      height: 50%;
+      width: 50%;
+      aspect-ratio: 1 / 1;
+    }
+
+    .container {
+      h2 {
+        font-size: rem(56);
+        margin-bottom: rem(40);
+      }
+
+      p {
+        width: auto;
+        font-size: rem(18);
+      }
+
+    }
+    .details {
+      height: 50%;
+    }
+  }
+
+  @include responsive('mobile') {
+    padding-block: rem(64);
+
+    .container {
+      h2 {
+        font-size: rem(40);
+        margin-bottom: rem(24);
+      }
+
+      p {
+        font-size: rem(16);
+      }
+    }
+  }
+}

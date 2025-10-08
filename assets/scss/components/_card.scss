@@ -1,0 +1,42 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.card {
+  text-align: center;
+
+  .icon {
+    width: rem(80);
+    height: rem(80);
+    margin-inline: auto;
+    @include flex-total-center;
+    margin-bottom: rem(24);
+  }
+
+  h3 {
+    color: $accent-02;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: rem(20);
+    height: rem(45);
+    text-wrap: balance;
+    text-align: center;
+    margin-bottom: rem(10);
+    width: rem(290);
+    margin-inline: auto;
+  }
+
+  p {
+    color: $accent-04;
+    text-wrap: balance;
+    font-weight: 300;
+    font-size: rem(16);
+  }
+
+  @include responsive('mobile') {
+    h3 {
+      height: auto;
+      width: auto;
+    }
+  }
+}

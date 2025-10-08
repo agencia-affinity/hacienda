@@ -1,0 +1,110 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+$focus-color: $accent-02;
+
+form {
+  .input-group {
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
+
+    input {
+      width: 100%;
+      padding: rem(18) rem(12);
+      font-size: rem(14);
+      font-weight: 400;
+      color: $white;
+      border-radius: 0;
+      border: 1px solid transparent;
+      border-top-width: 0;
+      background: $green-06;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+      &:focus {
+        border-color: $focus-color;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba($focus-color, 0.25);
+      }
+
+      &::placeholder {
+        color: $green-02;
+      }
+    }
+  }
+
+  .button-group {
+    margin-top: rem(25);
+
+    button {
+      background-color: $accent-01;
+      color: $white;
+      width: 100%;
+      padding: rem(14) rem(24);
+      text-transform: lowercase;
+      font-weight: 700;
+      font-size: rem(25);
+      letter-spacing: rem(1.88);
+      @include transition;
+      font-family: $font-secondary;
+      font-style: italic;
+
+      &:hover {
+        background-color: $accent-03;
+      }
+    }
+  }
+}
+
+.form-footer {
+
+  .form-group {
+    flex: 1;
+
+    &:not(:last-child) {
+      margin-bottom: rem(6);
+    }
+
+    input, textarea {
+      font-weight: 500;
+      width: 100%;
+      padding: rem(8) rem(10);
+      border: 1px solid $green-03;
+      font-size: rem(14);
+      background: $green-06;
+      color: $white;
+      @include transition;
+
+      &:focus {
+        border-color: $focus-color;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba($focus-color, 0.25);
+      }
+
+      &::placeholder {
+        color: $green-03;
+      }
+    }
+  }
+
+  .form-button {
+    @include flex-end;
+    justify-content: flex-end;
+
+    button {
+      padding: rem(10) rem(40);
+      text-transform: lowercase;
+      background: $accent-01;
+      font-size: rem(16);
+      color: $white;
+      font-family: $font-secondary;
+      @include transition;
+      border-radius: rem(4);
+
+      &:hover {
+        background: $accent-03;
+      }
+    }
+  }
+}

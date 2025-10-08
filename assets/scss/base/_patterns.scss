@@ -1,0 +1,27 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.heading-2 {
+  font-size: rem(48);
+  font-weight: 800;
+  color: $accent-01;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.align-left {
+    text-align: left;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  @include responsive('tablet') {
+    font-size: rem(40);
+  }
+
+  @include responsive('mobile') {
+    font-size: rem(32);
+  }
+}

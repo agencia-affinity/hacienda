@@ -1,0 +1,94 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.s-tour-virtual {
+  position: relative;
+  height: rem(1080);
+
+  .container {
+    position: relative;
+    z-index: 20;
+
+    .infos {
+      padding-top: rem(100);
+      @include flex-center;
+      gap: rem(64);
+
+      h2 {
+        font-size: rem(80);
+        text-transform: uppercase;
+        color: $white;
+        flex: 1;
+        letter-spacing: rem(8);
+      }
+
+      p {
+        color: $white;
+        font-size: rem(20);
+        width: rem(429);
+        letter-spacing: rem(0.2);
+      }
+    }
+
+  }
+
+  .tour {
+    width: 100%;
+
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: rem(1080);
+    }
+  }
+
+  @include responsive('tablet') {
+    overflow: hidden;
+    height: auto;
+
+    display: grid;
+    place-items: stretch;
+
+    .container {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+
+      .infos {
+        padding-top: rem(40);
+
+        h2 {
+          font-size: clamp(rem(32), 10vw, rem(48));
+        }
+
+        p {
+          width: auto;
+          font-size: min(rem(24), 2vw);
+        }
+      }
+    }
+
+
+    .tour {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      max-width: 100%;
+
+      img {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  @include responsive('mobile') {
+    .container {
+      .infos {
+        display: none;
+      }
+    }
+  }
+}
